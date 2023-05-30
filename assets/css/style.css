@@ -476,8 +476,26 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
+.vibrant-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 2px solid #0563bb; /* Blue color border */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.vibrant-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vibrant-section ul li {
+    margin-bottom: 10px;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
