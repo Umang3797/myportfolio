@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Umang Mavani Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Umang Mavani | Software Development Engineer</title>
+    <meta name="description" content="Portfolio of Umang Mavani — Software Development Engineer with 5+ years of experience in full-stack, backend, and cloud-native development. Proficient in Java, Python, React, and AWS.">
+    <meta name="keywords" content="Umang Mavani, Software Engineer, Full Stack Developer, Java, Python, React, AWS, ASU, Portfolio">
+    <meta name="author" content="Umang Mavani">
+    <meta name="robots" content="index, follow">
+    <meta name="color-scheme" content="dark light">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Umang Mavani | Software Development Engineer">
+    <meta property="og:description" content="Software Development Engineer with 5+ years of experience in full-stack, backend, and cloud-native development.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/image2.png">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <!-- Google Fonts — Sora (headings) + Plus Jakarta Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
+    <!-- Vendor CSS -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -26,764 +35,609 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Umang Bharat Mavani",
+        "jobTitle": "Software Development Engineer",
+        "url": "https://www.linkedin.com/in/umang-mavani/",
+        "email": "umangmavani15@gmail.com",
+        "telephone": "+12065939002",
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Arizona State University" },
+            { "@type": "CollegeOrUniversity", "name": "St. Francis Institute of Technology, University of Mumbai" }
+        ],
+        "knowsAbout": ["Java", "Python", "React", "AWS", "Kubernetes", "Docker", "Full-Stack Development"]
+    }
+    </script>
 </head>
 
 <body>
 
-    <!-- ======= Mobile nav toggle button ======= -->
-    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
+    <!-- Mobile nav toggle -->
+    <button class="mobile-nav-toggle d-lg-none" aria-label="Toggle navigation menu">
+        <i class="bi bi-list"></i>
+    </button>
 
-        <nav id="navbar" class="navbar nav-menu">
-            <ul>
-                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
-                </li>
-                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
-                </li>
-                <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-                        <span>Projects</span></a>
-                </li>
-                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
-                        <span>Certificates</span></a>
-                </li>
-                <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-envelope"></i>
-                        <span>Testimonials</span></a>
-                </li>
-            </ul>
-        </nav><!-- .nav-menu -->
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner">
+            <div class="profile-brief">
+                <span class="profile-initials">UM</span>
+            </div>
 
-    </header><!-- End Header -->
+            <nav id="navbar" class="nav-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house"></i><span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bi bi-person"></i><span>About</span></a></li>
+                    <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-gear"></i><span>Skills</span></a></li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-file-earmark-text"></i><span>Resume</span></a></li>
+                    <li><a href="#projects" class="nav-link scrollto"><i class="bi bi-code-square"></i><span>Projects</span></a></li>
+                    <li><a href="#services" class="nav-link scrollto"><i class="bi bi-award"></i><span>Certs</span></a></li>
+                    <li><a href="#testimonials" class="nav-link scrollto"><i class="bi bi-chat-quote"></i><span>Reviews</span></a></li>
+                </ul>
+            </nav>
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-        <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <h1>UMANG MAVANI</h1>
-            <p>I'm <span class="typed"
-                    data-typed-items="Computer Science Grad, Software Developer, FullStack Developer"></span></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/umang.mavani.7/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/umangmavani321/" class="instagram"><i
-                        class="bx bxl-instagram"></i></a>
-                <!-- <a href="mailto:umangmavani15@gmail.com" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-                <a href="https://www.linkedin.com/in/umang-mavani/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <i class="bi bi-sun-fill theme-icon-light"></i>
+                <i class="bi bi-moon-fill theme-icon-dark"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-particles" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Umang<br>Mavani</h1>
+                <div class="hero-typed-wrap">
+                    <span class="typed" data-typed-items="Software Development Engineer, Full Stack Developer, Cloud-Native Developer"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-desc">Recent CS graduate from ASU with 5+ years building scalable, production-grade systems with Java, Python, React, and AWS.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary scrollto">View Work</a>
+                    <a href="https://drive.google.com/file/d/1L63vVbhX2Dc2nd-uuoug936BctgLG2Y_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-outline">Download CV</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/umang-mavani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/umangmavani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="mailto:umangmavani15@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+                    <a href="https://www.instagram.com/umangmavani321/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <span></span>
             </div>
         </div>
-    </section><!-- End Hero -->
+    </section>
 
     <main id="main">
 
-        <!-- ======= About Section ======= -->
+        <!-- About Section -->
         <section id="about" class="about">
-            <div class="container" data-aos="fade-up" style="margin-bottom: -50px;">
-
-                <div class="section-title">
-                    <h2>About</h2>
-                    <p>As a seasoned Software Development Engineer with a four-year track record,
-                        I specialize in the meticulous design and development of innovative applications.
-                        My work has been instrumental in enhancing user satisfaction through the digitalization of
-                        physical processes,
-                        while concurrently elevating code quality and logic.
-                        <br><br>
-                        <!-- I am aspiring to deepen my knowledge in advanced Computer Science technologies to enhance my
-                        professional growth. -->
-                    </p>
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-tag">01 / About</span>
+                    <h2>About Me</h2>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-3">
-                        <img src="assets/img/image2.png" class="img-fluid" alt="">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="about-image-frame">
+                            <img src="assets/img/image2.png" alt="Umang Mavani">
+                        </div>
                     </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    <div class="about-content">
                         <h3>Software Development Engineer</h3>
-                        <p align="justify" class="fst-italic">
-                            I specialize in crafting production-ready and scalable code, ensuring the sustained high
-                            availability of applications. My expertise extends to meticulously tracking and analyzing
-                            application metrics throughout their lifecycle, optimizing performance and reliability.
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Course: </strong>
-                                        <span>Masters in Computer Science, ASU</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>CGPA: </strong>
-                                        <span>4.0 / 4.0</span></li>
-                                    <li class="list-item"><i class="bi bi-chevron-right"></i> <strong>Graduation: </strong>
-                                        <span>May 2025</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Contact Number: </strong>
-                                        <span>+12065939002</span></li>
-                                    <!-- <li class="list-item"><i class="bi bi-chevron-right"></i> <strong> Year: </strong>
-                                        <span>2019</span></li> -->
-                                    <li class="list-item"><i class="bi bi-chevron-right"></i> <strong>Email: </strong>
-                                        <a href="mailto:umavani@asu.edu">umavani@asu.edu</a>,&nbsp;  
-                                        <a href="mailto:umangmavani15@gmail.com">umangmavani15@gmail.com</a>
-                                </ul>
+                        <p>Recent Computer Science graduate from ASU with 5+ years of experience in full-stack, backend, and cloud-native development. Proficient in Java, Python, React, and AWS with a strong foundation in system design, performance optimization, and scalable architecture.</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Degree</span>
+                                <span class="detail-value">MS Computer Science, ASU</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">GPA</span>
+                                <span class="detail-value">4.0 / 4.0</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Graduated</span>
+                                <span class="detail-value">May 2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value"><a href="mailto:umangmavani15@gmail.com">umangmavani15@gmail.com</a></span>
+                            </div>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">5</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="2">7</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="2">4</span>
+                                <span class="stat-label">Research Papers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">5</span>
+                                <span class="stat-label">Certifications</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!-- End About Section -->
+        </section>
 
-        <!-- ======= Highlights Section ======= -->
-        <section id="facts" class="facts">
-            <div class="container" data-aos="fade-up" style="margin-bottom: -50px;">
-
-                <div class="section-title">
-                    <h2>Highlights</h2>
-                    <p>Below are some important highlights of my journey as a Software Development Engineer till date.
-                    </p>
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-tag">02 / Skills</span>
+                    <h2>Technical Stack</h2>
                 </div>
-
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count-box">
-                            <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Projects</p>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-code-slash"></i> Languages &amp; OOD</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">ReactJS</span>
+                            <span class="skill-tag">NodeJS</span>
+                            <span class="skill-tag">HTML/CSS/JS</span>
+                            <span class="skill-tag">Tableau</span>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                        <div class="count-box">
-                            <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Coursework</p>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h4><i class="bi bi-gear"></i> Technologies &amp; DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">Mockito</span>
+                            <span class="skill-tag">TestNG</span>
+                            <span class="skill-tag">JMeter</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">GitLab CI/CD</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">Splunk</span>
+                            <span class="skill-tag">SonarQube</span>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
-                            <i class="bi bi-headset"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Technical Research Paper</p>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-cloud"></i> Cloud &amp; Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag accent">AWS</span>
+                            <span class="skill-tag accent">GCP</span>
+                            <span class="skill-tag accent">Kubernetes</span>
+                            <span class="skill-tag accent">Docker</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">REST APIs</span>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
-                            <i class="bi bi-award"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Awards & Recognitions</p>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                        <h4><i class="bi bi-cpu"></i> AI / ML Libraries</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Hugging Face</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">spaCy</span>
+                            <span class="skill-tag">NLTK</span>
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">DeepSpeed</span>
                         </div>
-                    </div>
-                    <br><br><br>
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 text-centerr">
-                        <div class="count-box">
-                            <i class="bi bi-award"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>YoutTube Channel</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End Facts Section -->
-
-        <!-- ======= Skills Section ======= -->
-        <section id="skills" class="skills section-bg">
-            <div class="container" data-aos="fade-up" style="margin-bottom: -30px;">
-
-                <div class="section-title">
-                    <h2>Skills</h2>
-                    <p></p>
-                </div>
-
-                <div class="row skills-content">
-                    <div class="col-lg-12 vibrant-section">
-                        <ul>
-                            <li><strong>Technologies :</strong> Java, Python, C++, HTML/CSS, Javascript, ReactJS, NodeJs</li>
-                            <li><strong>Frameworks and Libraries :</strong> Bootstrap, Spring</li>
-                            <li><strong>Containerization and Orchestration :</strong> AWS, Kubernetes, Docker</li>
-                            <li><strong>Continuous Integration/Continuous Deployment :</strong> CI/CD, Gitlab, Jenkins, ApacheSpark
-                                AWS</li>
-                            <li><strong>Monitoring and Visualization :</strong> Kibana, Grafana, Splunk, Tableau, PowerBi</li>
-                            <li><strong>Data Science Libraries :</strong> NumPy, Pandas, Matplotlib, Scikit Learn, SciPy, Keras, TensorFlow, OpenCV</li>
-                            <li><strong>Databases :</strong> PostgreSQL, MySQL, OracleDb</li>
-                            <li><strong>Project Management :</strong> Jira, Confluence, Monday</li>
-                            <li><strong>Content Management Systems :</strong> Drupal, WordPress</li>
-                            <li><strong>APIs :</strong> RESTful APIs, Postman</li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </section><!-- End Skills Section -->
+        </section>
 
-        <!-- ======= Resume Section ======= -->
+        <!-- Resume Section -->
         <section id="resume" class="resume">
             <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Resume</h2>
+                <div class="section-header">
+                    <span class="section-tag">03 / Resume</span>
+                    <h2>Experience &amp; Education</h2>
+                    <a href="https://drive.google.com/file/d/1L63vVbhX2Dc2nd-uuoug936BctgLG2Y_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-outline btn-sm">Download Full Resume <i class="bi bi-download"></i></a>
                 </div>
 
-                <div class="download-button">
-                    <a href="https://drive.google.com/file/d/1L63vVbhX2Dc2nd-uuoug936BctgLG2Y_/view?usp=sharing" download="Umang_Mavani.pdf" target="_blank" class="btn-download">Download Resume</a>
-                </div>
+                <div class="timeline">
+                    <h3 class="timeline-section-title">Professional Experience</h3>
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h3 class="resume-title">Summary</h3>
-                        <div class="resume-item pb-0">
-                            <h4>Umang B. Mavani</h4>
-                            <p align="justify"><em>A skilled Software Developer with 4 years of experience in developing robust and
-                                    scalable applications and also in executing the planning, development and
-                                    post-production activities. </em></p>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Software Developer</h4>
+                                <span class="timeline-date">June 2024 &mdash; Present</span>
+                            </div>
+                            <p class="timeline-company">MindSigns Health, USA</p>
                             <ul>
-                                <li>1260 E University Dr, Tempe, AZ, 85288</li>
-                                <li>+1206-593-9002</li>
-                                <li>umavani@asu.edu</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="resume-title">Education</h3>
-                        <div class="resume-item">
-                            <h4>Master of Computer Science</h4>
-                            <h5>Aug 2023- May 2025</h5>
-                            <p><em>Arizona State University, Tempe, AZ</em></p>
-                            <p align="justify">Courses : Foundations of Algorithms, Planning and Learning Methods of AI, Combinatorial
-                                Algorithms and Intractability, Software Security, Data Mining, Blockchain, Data Processing at Scale, Software verification validation and Testing.</p>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Bachelors in Computer Engineering</h4>
-                            <h5>June 2015 - June 2019</h5>
-                            <p><em>St. Francis Institute of Technology, Mumbai, India</em></p>
-                            <p align="justify">Courses: Data Structures , Analysis of Algorithms , Operating Systems , Computer
-                                Networks,
-                                Soft Computing , Mobile Computing , Artificial Intelligence , Machine Learning. </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3 class="resume-title">Professional Experience</h3>
-                        <div class="resume-item">
-                            <h4>Software Developer Intern</h4>
-                            <h5>June 2024 - Present</h5>
-                            <p><em>MindSigns Health, Arizona, USA</em></p>
-                            <ul align="justify">
-                                <li> Engineered robust React & React Native applications for cloud-based monitoring platforms and improved diagnostic accuracy by 30%.
-                                </li>
-                                <li> Leveraged AWS services, including S3, Cognito, and Lambda, reducing API response times by 40% and enhancing product scalability.
-                                </li>
-                                <li> Executed 100+ test cases in JMeter for load testing and identified 30 critical bugs while using agile methodology to work with other teams.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Software Engineer 2</h4>
-                            <h5>Sept 2021 - July 2023</h5>
-                            <p><em>HERE Technologies , Mumbai , India</em></p>
-                            <ul align="justify">
-                                <li> Developed 4 modules and microservices, including training materials and operational workflows for a service framework to ensure the process of flow of JSON map data in a timely manner using ML.
-                                </li>
-                                <li> Boosted the CI/CD pipeline harnessing Kubernetes and GitLab, resulting in an increase in completion flow from 20% to 80%.
-                                </li>
-                                <li> Designed REST APIs using Java to check the data in the stream pipeline, augmenting accuracy by 20% and delivering 87% code coverage through unit testing.                                
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Software Engineer - IT Executive</h4>
-                            <h5>July 2019 - Sept 2021</h5>
-                            <p><em>Siemens Limited , Mumbai , India</em></p>
-                            <ul align="justify">
-                                <li>Analyzed requirements and led the development and deployment of a Mendix-based Native Mobile App for Employee Health Declarations, catering to 20,000 users.
-                                </li>
-                                <li>Created MIS for the Siemens Scholarship Portal using ReactJS, OracleDb, and AWS services, providing secure storage and scalable infrastructure for the corporate team to oversee the yearly program and securely manage 5000 student data and scholarship information.
-                                </li>
+                                <li>Refactored JMeter suite, removing hard-coded identifiers and adding automated cleanup for consistent, repeatable test cycles.</li>
+                                <li>Implemented OWASP-aligned JWT management with AWS Cognito API, resolving all vulnerabilities from external penetration test.</li>
+                                <li>Redesigned EEG upload/ingestion flows and contributed key UI integrations with Expo for the React Native application.</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <h3 class="resume-title">Research Papers Published</h3>
-                        <div class="resume-item pb-0">
-                            <h4>ARXIV COMPUTER SCIENCE, Co-Author, Oct-2024</h4>
-                            <p align="justify"><em>Social Bias Classification in Text with Generalizations, Unfairness, and Stereotypes presented at Cornell University - <a
-                                        href="https://arxiv.org/abs/2410.08388"><u>Link</u></a></em></p>
-                        </div>
-                        <div class="resume-item pb-0">
-                            <h4>IEEE, Author, Aug-2020</h4>
-                            <p align="justify"><em>Natural Language Processing based Text Summarization and Querying Model. IEEE 2020
-                                    Fourth
-                                    International Conference on Inventive Systems and Control (ICISC) - <a
-                                        href="https://ieeexplore.ieee.org/document/9171068"><u>Link</u></a></em></p>
-                        </div>
-                        <div class="resume-item pb-0">
-                            <h4>SPRINGER, Author, June-2019</h4>
-                            <p align="justify"><em>Naive Bayes Classification on Student Placement Data: A Comparative Study of Data
-                                    Mining
-                                    Tools. Information and Communication Technology for Sustainable Development A ISC
-                                    book
-                                    series. pp 363-372 - <a
-                                        href="https://link.springer.com/chapter/10.1007/978-981-13-7166-0_35"><u>Link</u></a></em>
-                            </p>
-                        </div>
-                        <div class="resume-item pb-0">
-                            <h4>IEEE, Co-Author, Dec-2018</h4>
-                            <p align="justify"><em>A Semester Grade Point Average Estimation System for Students Attaining Higher
-                                    Schooling
-                                    in Specialized Courses. IEEE 2018 2nd International Conference on Trends in
-                                    Electronics and
-                                    Informatics (ICOEI) - <a
-                                        href="https://ieeexplore.ieee.org/document/8553751"><u>Link</u></a></em></p>
-                        </div>
 
-                        <h3 class="resume-title">Awards</h3>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Software Engineer 2</h4>
+                                <span class="timeline-date">Sept 2021 &mdash; July 2023</span>
+                            </div>
+                            <p class="timeline-company">HERE Technologies, Mumbai, India</p>
+                            <ul>
+                                <li>Engineered 4 production-ready microservices on AWS S3 &amp; Kubernetes, improving accuracy by 20% with 87% test coverage.</li>
+                                <li>Revamped CI/CD pipelines with GitLab &amp; EKS, raising completion rates from 20% to 80%.</li>
+                                <li>Executed 100+ JMeter load tests, identifying 30+ performance bottlenecks across real-time data workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <div class="resume-item pb-0">
-                            <h4>Director of Campus Engagement at ASU</h4>
-                            <p align="justify"><em>The Graduate Stduent Govt. Director of Outreach liaises between GSG and graduate students, plans campus events, visits Graduate Student Centers, and connects with the Dean of Students.</em></p>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Information Technology Executive</h4>
+                                <span class="timeline-date">July 2019 &mdash; Sept 2021</span>
+                            </div>
+                            <p class="timeline-company">Siemens Limited, Mumbai, India</p>
+                            <ul>
+                                <li>Led design and deployment of a Mendix mobile app for 20,000+ employees with significant load time improvements.</li>
+                                <li>Mentored two junior engineers in cloud deployment, CI/CD integration, and secure development practices.</li>
+                                <li>Built a cloud-native platform (ReactJS, OracleDB, AWS) for the Scholarship Program, serving 5,000+ users.</li>
+                            </ul>
                         </div>
-                        <div class="resume-item pb-0">
-                            <h4>Special Recognition at Siemens India</h4>
-                            <p align="justify"><em>Special Recognition Award at Siemens India Business Conference-2020 for demonstrating
-                                    all-round excellence performance in developing a critical application.</em></p>
+                    </div>
+
+                    <h3 class="timeline-section-title">Education</h3>
+
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Master of Computer Science</h4>
+                                <span class="timeline-date">Aug 2023 &mdash; May 2025</span>
+                            </div>
+                            <p class="timeline-company">Arizona State University, Tempe, AZ &mdash; GPA 4.0 / 4.0</p>
+                            <p class="timeline-courses">Foundations of Algorithms, AI Planning &amp; Learning, Software Security, Data Mining, Blockchain, Data Processing at Scale</p>
                         </div>
-                        <div class="resume-item pb-0">
-                            <h4>IT AAE SPIRIT Award</h4>
-                            <p align="justify"><em>I received regional IT Asia Australia and Middle East (AAE) SPIRIT Award for
-                                    demonstrating Ownership,
-                                    Behaviour, Leadership,
-                                    People Orientation in deploying application to Siemens India.</em>
-                            </p>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Bachelors in Computer Engineering</h4>
+                                <span class="timeline-date">June 2015 &mdash; May 2019</span>
+                            </div>
+                            <p class="timeline-company">St. Francis Institute of Technology, Mumbai, India &mdash; GPA 3.8 / 4.0</p>
+                            <p class="timeline-courses">Data Structures, Algorithms, OS, Computer Networks, AI, Machine Learning, Soft Computing</p>
                         </div>
-                        <div class="resume-item pb-0">
-                            <h4>NSS Member</h4>
-                            <p align="justify"><em>I received a prestigious certificate from the Government of India for dedicating two
-                                    years as an NSS volunteer, passionately serving the community. During this time,
-                                    I actively participated in an 8 day camp held in rural areas, where I
-                                    played a vital role in educating and empowering the local residents</em></p>
+                    </div>
+
+                    <h3 class="timeline-section-title">Research Papers</h3>
+
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>GUS Framework: Benchmarking Social Bias Classification</h4>
+                                <span class="timeline-date">ARXIV, Oct 2024</span>
+                            </div>
+                            <p>Co-Author &mdash; BERT-based multi-label framework for detecting social biases, achieving 0.80 F1. <a href="https://arxiv.org/abs/2410.08388" target="_blank" rel="noopener noreferrer">Read Paper</a></p>
                         </div>
-                        <!-- <div class="resume-item pb-0">
-                            <h4>Pragati 2018</h4>
-                            <p align="justify"><em>Secured the prestigious runner-up position under the Software Category in the highly
-                                    competitive Inter College Technical Project Competition PRAGATI-2018</em></p>
-                        </div> -->
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>NLP-based Text Summarization and Querying Model</h4>
+                                <span class="timeline-date">IEEE ICISC, Aug 2020</span>
+                            </div>
+                            <p>Author &mdash; TF-IDF &amp; CoreNLP pipeline achieving 58% text compression. <a href="https://ieeexplore.ieee.org/document/9171068" target="_blank" rel="noopener noreferrer">Read Paper</a></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Naive Bayes Classification on Student Placement Data</h4>
+                                <span class="timeline-date">Springer, June 2019</span>
+                            </div>
+                            <p>Author &mdash; Comparative study across Python, WEKA, R, and Orange. <a href="https://link.springer.com/chapter/10.1007/978-981-13-7166-0_35" target="_blank" rel="noopener noreferrer">Read Paper</a></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Semester GPA Estimation System</h4>
+                                <span class="timeline-date">IEEE ICOEI, Dec 2018</span>
+                            </div>
+                            <p>Co-Author &mdash; Predictive tool achieving 90%+ simulation accuracy. <a href="https://ieeexplore.ieee.org/document/8553751" target="_blank" rel="noopener noreferrer">Read Paper</a></p>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </section><!-- End Resume Section -->
+        </section>
 
-        <!-- ======= Portfolio Section ======= -->
-        <section id="projects" class="portfolio section-bg">
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
             <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Projects</h2>
-                    <p>Have a look at these cool stuffs !! </p>
+                <div class="section-header">
+                    <span class="section-tag">04 / Projects</span>
+                    <h2>Featured Work</h2>
                 </div>
 
-                <!--            <div class="row">-->
-                <!--                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">-->
-                <!--                    <ul id="portfolio-flters">-->
-                <!--                        <li data-filter="*" class="filter-active">All</li>-->
-                <!--                        <li data-filter=".filter-app">App</li>-->
-                <!--                        <li data-filter=".filter-card">Card</li>-->
-                <!--                        <li data-filter=".filter-web">Web</li>-->
-                <!--                    </ul>-->
-                <!--                </div>-->
-                <!--            </div>-->
-
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/SSP/image.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Siemens Scholarship Program</h4>
-                                <!--                            <p>App</p>-->
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/SSP/image.png" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Siemens Scholarship Program"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/SSP/image.png" alt="Siemens Scholarship Program">
+                            <div class="project-overlay">
+                                <a href="assets/img/portfolio/SSP/image.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Siemens Scholarship Program"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Siemens Scholarship Program</h4>
+                            <div class="project-tech">
+                                <span>ReactJS</span><span>OracleDB</span><span>AWS</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/Summary/splashScreen.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Text Summarization and Querying Model</h4>
-                                <!--                            <p>Web</p>-->
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/Summary/splashScreen.png"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="Text Summarization and Querying Model"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details-2.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/Summary/splashScreen.png" alt="Text Summarization Model">
+                            <div class="project-overlay">
+                                <a href="assets/img/portfolio/Summary/splashScreen.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Text Summarization and Querying Model"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details-2.html" class="portfolio-details-lightbox" data-glightbox="type: external"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Text Summarization &amp; Querying</h4>
+                            <div class="project-tech">
+                                <span>NLP</span><span>TF-IDF</span><span>CoreNLP</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/PointerAnalysis/Login.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Pointer Analysis System</h4>
-                                <!--                            <p>Card</p>-->
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/PointerAnalysis/Login.png"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details-4.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/PointerAnalysis/Login.png" alt="Pointer Analysis System">
+                            <div class="project-overlay">
+                                <a href="assets/img/portfolio/PointerAnalysis/Login.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Pointer Analysis System"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details-4.html" class="portfolio-details-lightbox" data-glightbox="type: external"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Pointer Analysis System</h4>
+                            <div class="project-tech">
+                                <span>Java</span><span>Data Flow</span><span>Analysis</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/SnL/mainpage2.jpeg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Snake and Ladder</h4>
-                                <!--                            <p>App</p>-->
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/SnL/mainpage2.jpeg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details-3.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/SnL/mainpage2.jpeg" alt="Snake and Ladder game">
+                            <div class="project-overlay">
+                                <a href="assets/img/portfolio/SnL/mainpage2.jpeg" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Snake and Ladder"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details-3.html" class="portfolio-details-lightbox" data-glightbox="type: external"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Snake and Ladder</h4>
+                            <div class="project-tech">
+                                <span>Game Dev</span><span>Algorithms</span>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/eitc/mainpage.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Essential Items Tracker</h4>
-                                <!--                            <p>Web</p>-->
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/eitc/mainpage.png" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details-5.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/eitc/mainpage.png" alt="Essential Items Tracker">
+                            <div class="project-overlay">
+                                <a href="assets/img/portfolio/eitc/mainpage.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Essential Items Tracker"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details-5.html" class="portfolio-details-lightbox" data-glightbox="type: external"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Essential Items Tracker</h4>
+                            <div class="project-tech">
+                                <span>Web App</span><span>Full Stack</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/Sfw/sfw.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Service Orchestration Framework</h4>
-                                <!--                            <p>Web</p>-->
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/Sfw/sfw.png" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details-6.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/Sfw/sfw.png" alt="Service Orchestration Framework">
+                            <div class="project-overlay">
+                                <a href="assets/img/portfolio/Sfw/sfw.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Service Orchestration Framework"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details-6.html" class="portfolio-details-lightbox" data-glightbox="type: external"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Service Orchestration Framework</h4>
+                            <div class="project-tech">
+                                <span>Microservices</span><span>K8s</span><span>Java</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </section><!-- End Portfolio Section -->
+        </section>
 
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
+        <!-- Certificates Section -->
+        <section id="services" class="certificates">
             <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Certificates</h2>
-                    <p>Embark on a journey through my remarkable achievements<br>A collection of certificates that
-                        showcase
-                        my excellence </p>
+                <div class="section-header">
+                    <span class="section-tag">05 / Certifications</span>
+                    <h2>Certificates &amp; Awards</h2>
                 </div>
-
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-box iconbox-blue">
-                            <div class="icon">
-                                <a href="assets/img/portfolio/MendixRapidDeveloper-23323.pdf" target="_blank">
-                                    <!-- Replace "path/to/your/pdf.pdf" with the actual path to your PDF file -->
-                                    <svg width="100" height="100" viewBox="0 0 600 600"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                                        </path>
-                                        <img src="assets\img\Mendix.png" alt="Image Description" width="50" height="50" style="position: relative; z-index: 1;">
-                                    </svg>
-                                </a>
-                            </div>
-                            <h4><a href="assets/img/portfolio/MendixRapidDeveloper-23323.pdf" target="_blank">Mendix
-                                    Rapid
-                                    Developer</a></h4>
-                            <p align="center">Successfully completed all required coursework and training for the Mendix Rapid
-                                Developer
-                                Certificate</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                        data-aos-delay="200">
-                        <div class="icon-box iconbox-orange">
-                            <div class="icon">
-                                <a href="assets\img\portfolio\AWSDeveloperAssociate.pdf" target="_blank">
-                                    <svg width="100" height="100" viewBox="0 0 600 600"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                                        </path>
-                                        <img src="assets\img\AWS-Developer-Associate.png" alt="Image Description" width="55" height="55" style="position: relative; z-index: 1;">
-                                    </svg>
-                                </a>
-                            </div>
-                            <h4><a href="assets\img\portfolio\AWSDeveloperAssociate.pdf" target="_blank">AWS Certificate</a>
-                            </h4>
-                            <p align="center">Successfully completed the course of AWS Developer Associate on Udemy and mastered the critical AWS concepts and technologies. </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                        data-aos-delay="200">
-                        <div class="icon-box iconbox-teal">
-                            <div class="icon">
-                                <a href="assets/img/portfolio/NSS certificate.pdf" target="_blank">
-                                    <svg width="100" height="100" viewBox="0 0 600 600"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                                        </path>
-                                        <img src="assets\img\NSS.png" alt="Image Description" width="50" height="50" style="position: relative; z-index: 1;">
-                                    </svg>
-                                </a>
-                            </div>
-                            <h4><a href="assets/img/portfolio/NSS certificate.pdf" target="_blank">NSS Certificate</a>
-                            </h4>
-                            <p align="center">Rendered social service for 2 years as NSS volunteer and attended NSS speacial program
-                                camp.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                        data-aos-delay="100">
-                        <div class="icon-box iconbox-yellow">
-                            <div class="icon">
-                                <a href="assets/img/portfolio/Football-is-life-2017-2018.pdf" target="_blank">
-                                    <svg width="100" height="100" viewBox="0 0 600 600"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
-                                        </path>
-                                    </svg>
-                                    <img src="assets\img\Football.png" alt="Image Description" width="45" height="45" style="position: relative; z-index: 1;">
-                                </a>
-                            </div>
-                            <h4><a href="assets/img/portfolio/Football-is-life-2017-2018.pdf" target="_blank">Footbal is
-                                    Life (FIL) Coach</a></h4>
-                            <p align="center">I actively participated in the 'Football is Life' project for 2 years, conducted by Cooperación Internacional in collaboration with Atlético de Madrid Football Club and Gulmohur Centre from Mumbai.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                        data-aos-delay="200">
-                        <div class="icon-box iconbox-pink">
-                            <div class="icon">
-                                <a href="assets/img/portfolio/PragatiCertificate.pdf" target="_blank">
-                                    <svg width="100" height="100" viewBox="0 0 600 600"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                                        </path>
-                                    </svg>
-                                    <img src="assets\img\sfit1.png" alt="Image Description" width="45" height="45" style="position: relative; z-index: 1;">
-                                </a>
-                            </div>
-                            <h4><a href="assets/img/portfolio/PragatiCertificate.pdf" target="_blank">Pragati
-                                    Certificate</a></h4>
-                            <p align="center">Achieved the prestigious runner-up position in the Software Category at an
-                                Intercollegiate
-                                Annual Project Competition!</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                        data-aos-delay="300">
-                        <div class="icon-box iconbox-red">
-                            <div class="icon">
-                                <a href="assets/img/portfolio/Coursera-Front-End-Web-development-React.pdf"
-                                    target="_blank">
-                                    <svg width="100" height="100" viewBox="0 0 600 600"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
-                                        </path>
-                                    </svg>
-                                    <img src="assets\img\reactjs.png" alt="Image Description" width="45" height="45" style="position: relative; z-index: 1;">
-                                </a>
-                            </div>
-                            <h4><a href="assets/img/portfolio/Coursera-Front-End-Web-development-React.pdf"
-                                    target="_blank">FrontEnd Web Development Certificate- ReactJS</a></h4>
-                            <p align="center">I completed an online course from HongKong University of Science and Technology athrough
-                                Coursera.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                        data-aos-delay="200">
-                        <div class="icon-box iconbox-orange">
-                            <div class="icon">
-                                <a href="assets/img/portfolio/Corporate-Special-Recognition-Certificate-Umang.pdf"
-                                    target="_blank">
-                                    <svg width="100" height="100" viewBox="0 0 600 600"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                                        </path>
-                                    </svg>
-                                    <img src="assets\img\Siemens.png" alt="Image Description" width="45" height="45" style="position: relative; z-index: 1;">
-                                </a>
-                            </div>
-                            <h4><a href="assets/img/portfolio/Corporate-Special-Recognition-Certificate-Umang.pdf"
-                                target="_blank">Special Recognition Certificate</a></h4>
-                            <p align="center">Special Recognition Award at Siemens India Business Conference-2020 for demonstrating all-round excellence performance in developing a critical application.</p>
-                        </div>
-                    </div>
+                <div class="certs-grid">
+                    <a href="assets/img/portfolio/MendixRapidDeveloper-23323.pdf" target="_blank" rel="noopener noreferrer" class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/img/Mendix.png" alt="Mendix logo" class="cert-logo">
+                        <h4>Mendix Rapid Developer</h4>
+                        <p>Low-code application development certification</p>
+                    </a>
+                    <a href="assets/img/portfolio/AWSDeveloperAssociate.pdf" target="_blank" rel="noopener noreferrer" class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                        <img src="assets/img/AWS-Developer-Associate.png" alt="AWS logo" class="cert-logo">
+                        <h4>AWS Developer Associate</h4>
+                        <p>Cloud-native development and AWS services</p>
+                    </a>
+                    <a href="assets/img/portfolio/Coursera-Front-End-Web-development-React.pdf" target="_blank" rel="noopener noreferrer" class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/reactjs.png" alt="ReactJS logo" class="cert-logo">
+                        <h4>Frontend Web Dev &mdash; ReactJS</h4>
+                        <p>HKUST through Coursera</p>
+                    </a>
+                    <a href="assets/img/portfolio/Corporate-Special-Recognition-Certificate-Umang.pdf" target="_blank" rel="noopener noreferrer" class="cert-card" data-aos="fade-up" data-aos-delay="250">
+                        <img src="assets/img/Siemens.png" alt="Siemens logo" class="cert-logo">
+                        <h4>Special Recognition &mdash; Siemens</h4>
+                        <p>All-round excellence at Business Conference 2020</p>
+                    </a>
+                    <a href="assets/img/portfolio/NSS certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/img/NSS.png" alt="NSS logo" class="cert-logo">
+                        <h4>NSS Certificate</h4>
+                        <p>2 years community service volunteer</p>
+                    </a>
+                    <a href="assets/img/portfolio/PragatiCertificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-card" data-aos="fade-up" data-aos-delay="350">
+                        <img src="assets/img/sfit1.png" alt="SFIT logo" class="cert-logo">
+                        <h4>Pragati &mdash; Runner Up</h4>
+                        <p>Intercollegiate Software Project Competition</p>
+                    </a>
+                    <a href="assets/img/portfolio/Football-is-life-2017-2018.pdf" target="_blank" rel="noopener noreferrer" class="cert-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/img/Football.png" alt="Football is Life logo" class="cert-logo">
+                        <h4>Football is Life Coach</h4>
+                        <p>2-year program with Atletico de Madrid</p>
+                    </a>
                 </div>
-
             </div>
-        </section><!-- End Services Section -->
+        </section>
 
-        <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials section-bg">
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
             <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Testimonials</h2>
+                <div class="section-header">
+                    <span class="section-tag">06 / Testimonials</span>
+                    <h2>What People Say</h2>
                 </div>
 
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets\img\dominik.png" class="testimonial-img" alt="">
-                                <h3>Dr. Dominik Hoerndlein</h3>
-                                <h4>Incubation Manager-Turning emerging technologies into solutions</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    I worked together with Umang on bringing a software solution into production. With all the challenges that a new services brings plus increased challenges due to Covid, Umang proved to be a reliable partner who drives topics forward, develops solutions to unforeseen issues and goes the extra mile for reaching the common goal.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
+                            <div class="testimonial-card">
+                                <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+                                <p>I worked together with Umang on bringing a software solution into production. Umang proved to be a reliable partner who drives topics forward, develops solutions to unforeseen issues and goes the extra mile for reaching the common goal.</p>
+                                <div class="testimonial-author">
+                                    <img src="assets/img/dominik.png" alt="Dr. Dominik Hoerndlein">
+                                    <div>
+                                        <h4>Dr. Dominik Hoerndlein</h4>
+                                        <span>Incubation Manager, Siemens</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- End testimonial item -->
-
+                        </div>
                         <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets\img\dipti.png" class="testimonial-img" alt="">
-                                <h3>Dipti Shevalekar</h3>
-                                <h4>Software Development Engineer in Test at Metamorphick</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    I enthusiastically endorse Umang as an outstanding professional who consistently achieves remarkable results. His expertise in Software field coupled with their adeptness at analyzing data and devising innovative solutions has proven invaluable to us. Umang possesses excellent communication skills, demonstrates effective leadership
-                                    qualities, and exemplifies the essence of a team player. Without a doubt, he will continue to thrive in their career and make substantial contributions to any organization fortunate enough to have him.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
+                            <div class="testimonial-card">
+                                <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+                                <p>I enthusiastically endorse Umang as an outstanding professional who consistently achieves remarkable results. His expertise coupled with his adeptness at analyzing data and devising innovative solutions has proven invaluable.</p>
+                                <div class="testimonial-author">
+                                    <img src="assets/img/dipti.png" alt="Dipti Shevalekar">
+                                    <div>
+                                        <h4>Dipti Shevalekar</h4>
+                                        <span>SDET at Metamorphick</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- End testimonial item -->
-
+                        </div>
                         <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets\img\testimonials\Bidisha.png" class="testimonial-img" alt="">
-                                <h3>Dr. Bidisha Bhaumik-Roy</h3>
-                                <h4>Associate Professor at St. Francis Institute Of Technology</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    I have known Mr. Umang Mavani during his tenure as a student of Department of Computer Engineering at St. Francis Institute of Technology. I had the opportunity to assess his work in my capacity as a Professor and as an advisor for his undergraduate final year project. During my association with him, I found him remarkably dedicated about his studies. I confidently vouch for his academic excellence and competence. He has consistently been amongst the top rankers of his batch throughout the course of his degree.
-                                    Umang actively participated in various seminars and workshops related to the theory he was studying to further enhance his knowledge. In addition to excelling in his coursework, he showcased his expertise by presenting and publishing a technical paper titled "Natural Language Processing based Text Summarization and Querying Model" at the prestigious IEEE conference. Alongside his team, he achieved recognition by being selected for the esteemed 'Prakalp', an annual inter-college project competition at SFIT. Umang's dedication to his studies extended to his mini project, 'Pointer Analysis System', which not only earned him accolades but also resulted in the publication of his article in the prestigious CSI magazine. 
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
+                            <div class="testimonial-card">
+                                <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+                                <p>I found him remarkably dedicated about his studies. He has consistently been amongst the top rankers of his batch. He showcased expertise by publishing a technical paper at the prestigious IEEE conference.</p>
+                                <div class="testimonial-author">
+                                    <img src="assets/img/testimonials/Bidisha.png" alt="Dr. Bidisha Bhaumik-Roy">
+                                    <div>
+                                        <h4>Dr. Bidisha Bhaumik-Roy</h4>
+                                        <span>Professor, SFIT Mumbai</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- End testimonial item -->
-
+                        </div>
                         <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets\img\testimonials\akarsh.png" class="testimonial-img" alt="">
-                                <h3>Akarsh Rai</h3>
-                                <h4>Software Engineer at HERE Technologies</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    I am delighted to provide my highest recommendation for Umang. Having had the privilege of working closely with Umang, I can confidently attest that he stands out as one of the finest professionals I've ever collaborated with.
-
-                                    Umang consistently demonstrated exceptional productivity, diligence, and a forward-thinking approach. He possesses remarkable intelligence, ambition, and energy, coupled with a proactive and perfectionist mindset. His dedication to continuous improvement and pursuit of knowledge makes him an invaluable asset to any team.
-
-                                    I wholeheartedly endorse Umang for any future opportunities and have no doubt that he will continue to thrive and make significant contributions wherever he goes.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
+                            <div class="testimonial-card">
+                                <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+                                <p>He consistently demonstrated exceptional productivity, diligence, and a forward-thinking approach. His dedication to continuous improvement makes him an invaluable asset to any team.</p>
+                                <div class="testimonial-author">
+                                    <img src="assets/img/testimonials/akarsh.png" alt="Akarsh Rai">
+                                    <div>
+                                        <h4>Akarsh Rai</h4>
+                                        <span>Software Engineer, HERE Technologies</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- End testimonial item -->
-
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-
             </div>
         </section>
 
-    </main><!-- End #main -->
+    </main>
 
-    <!-- ======= Footer ======= -->
+    <!-- Footer -->
     <footer id="footer">
         <div class="container">
-            <h3>UMANG B. MAVANI</h3>
-            <p>Master in Computer Science Graduate Student from Arizona State University. </p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/umang.mavani.7/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/umangmavani321/" class="instagram"><i
-                        class="bx bxl-instagram"></i></a>
-                <!-- <a href="mailto:umangmavani15@gmail.com" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-                <a href="https://www.linkedin.com/in/umang-mavani/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Umang Mavani</h3>
+                    <p>Software Development Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/umang-mavani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/umangmavani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="mailto:umangmavani15@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+                    <a href="https://www.instagram.com/umangmavani321/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2025 Umang Mavani</span>
             </div>
         </div>
-    </footer><!-- End Footer -->
+    </footer>
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="bi bi-chevron-up"></i></a>
 
-    <!-- Vendor JS Files -->
+    <!-- Vendor JS -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Template Main JS File -->
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
