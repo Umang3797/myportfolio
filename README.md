@@ -1,62 +1,54 @@
+# Umang Mavani — Portfolio
 
-# My Personal Portfolio Website
+Personal portfolio website showcasing 5+ years of software engineering experience across full-stack, backend, and cloud-native development.
 
-This is a responsive and modern personal portfolio website designed to showcase professional experience, academic background, projects, technical papers, and achievements. Built with HTML, CSS, JavaScript, and Bootstrap, the portfolio is suitable for software engineers and developers looking to create an online presence.
+**Live:** [umang3797.github.io/myportfolio](https://umang3797.github.io/myportfolio) (if hosted on GitHub Pages)
 
-## 🌟 Features
+## Tech Stack
 
-- Fully responsive design for desktop and mobile
-- Clean and professional layout
-- Sections for About, Resume, Projects, Research, and Contact
-- Scroll-based navigation highlighting
-- Interactive modals for portfolio/project details
-- Social media and contact links integration
-
-## 🛠️ Technologies Used
-
-- HTML5, CSS3, JavaScript
+- HTML5, CSS3 (custom properties, grid, flexbox)
+- Vanilla JavaScript (ES6+)
 - Bootstrap 5
-- jQuery
-- Font Awesome
-- AOS (Animate on Scroll) Library
-- Pure JavaScript for interactivity
+- AOS, Swiper, Typed.js, GLightbox, PureCounter
+- Google Fonts (Sora, Plus Jakarta Sans, JetBrains Mono)
 
-## 📁 Folder Structure
+## Features
+
+- Dark / Light mode with system preference detection and localStorage persistence
+- Responsive sidebar navigation with hover-expand on desktop
+- Animated hero with typed text effect
+- Timeline-based resume with experience, education, and research papers
+- Project gallery with lightbox and detail modals
+- Testimonials carousel
+- Certificate cards grid
+- Skill tags organized by category
+- SEO optimized (meta tags, Open Graph, JSON-LD structured data)
+- Accessible (ARIA labels, semantic HTML, keyboard-friendly)
+
+## Structure
 
 ```
 myportfolio/
-├── index.html               # Main landing page
-├── portfolio-details.html   # Modal project detail templates
-├── assets/                  # Images, icons, styles, and scripts
-│   ├── css/
-│   ├── js/
-│   ├── img/
-│   └── vendor/              # Bootstrap, AOS, etc.
-├── README.md                # This README file
+├── index.html                    # Main single-page portfolio
+├── portfolio-details*.html       # Project detail pages (6)
+├── assets/
+│   ├── css/style.css             # Design system with dark/light tokens
+│   ├── js/main.js                # Theme toggle, nav, animations
+│   ├── img/                      # Profile, project, and cert images
+│   └── vendor/                   # Bootstrap, AOS, Swiper, etc.
+├── .gitignore
+└── README.md
 ```
 
-## 🚀 Getting Started
+## Run Locally
 
-1. Clone or download the repository:
-   ```bash
-   git clone <your-repo-url>
-   ```
+```bash
+git clone https://github.com/Umang3797/myportfolio.git
+cd myportfolio
+# Open index.html in a browser, or use a local server:
+npx serve .
+```
 
-2. Open `index.html` in any modern browser to view the portfolio locally.
+## License
 
-3. (Optional) Host it using GitHub Pages, Netlify, or Vercel to make it publicly accessible.
-
-## 🧩 Customization
-
-- Replace content in `index.html` with your own information.
-- Update images in `assets/img/`.
-- Add or modify portfolio details in `portfolio-details.html` pages.
-- Update metadata and social links in the footer and header.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the project and submit pull requests to improve design, accessibility, or functionality.
-
-## 📄 License
-
-This project is free to use for personal portfolio purposes. Attribution is appreciated but not required.
+Free to use for personal portfolio purposes.
